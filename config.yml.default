@@ -1,0 +1,17 @@
+---
+:api_key: <API Key>
+:password: <Password>
+:store: <Shop Name>.myshopify.com
+:theme_id: 
+:whitelist_files:
+- layout/
+- assets/
+- config/
+- snippets/
+- templates/
+- locales/
+:ignore_files:
+- .git/
+- .idea/
+- .gitignore
+- README.md
