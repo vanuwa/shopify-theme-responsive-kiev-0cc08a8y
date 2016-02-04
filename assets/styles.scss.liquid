@@ -3056,4 +3056,41 @@ body .bc-studio-modifier,
   .top_bar {
     display: none;
   }
+
+  .bc-studio-top-menu-line {
+    border-top: 1px solid lighten({{ settings.nav_color }}, 25%);
+    margin-top: -20px;
+  }
+
+  div.logo {
+    padding-top: 0 !important;
+  }
+
+  div.footer,
+  .footer {
+    hr {
+      border-color: {{ settings.footer_link_color }};
+    }
+
+    form .action_button.sign_up,
+    .action_button{
+      background-color: #ffffff !important;
+      border-color: #ffffff !important;
+      color: #5090cc !important;
+    }
+
+    .footer .action_button {
+      background-color: #006480 !important;
+      border-color: #006480 !important
+    }
+
+    .footer_menu {
+      text-transform: {{ settings.footer_menu_font_style }};
+      font-weight: {{ settings.footer_menu_weight }};
+    }
+
+    .credits, .credits a {
+      color: {{ settings.footer_link_color }} !important;
+    }
+  }
 }

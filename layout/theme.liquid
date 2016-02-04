@@ -111,8 +111,8 @@
       </div>  
     </div>
   
-    <div class="container content"> 
-      <div class="sixteen columns logo">
+    <div class="container content">
+      <div class="four columns logo">
         {% if settings.header_social_icons %}
           <div class="header_icons">
             {% include 'social-icons' %}
@@ -128,7 +128,7 @@
         </a>
       </div>
       
-      <div class="sixteen columns clearfix">
+      <div class="twelve columns clearfix">
         <div id="mobile_nav"></div>
         <div id="nav">
           <ul id="menu">
@@ -136,15 +136,15 @@
               {% if linklists[link.handle] == empty %}
                 <li><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %}>{{ link.title }}</a></li>
               {% else %}
-                <li><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %} {% for link in linklists[link.handle].links %}{% if link.active %}class="active"{% endif %}{% endfor %}>{{ link.title }}<span class="icon-down-arrow arrow"></span></a> 
+                <li><a href="{{ link.url }}" {% if link.active %}class="active"{% endif %} {% for link in linklists[link.handle].links %}{% if link.active %}class="active"{% endif %}{% endfor %}>{{ link.title }}<span class="icon-down-arrow arrow"></span></a>
                   <ul class="animated fadeIn">
                     {% for link in linklists[link.handle].links %}
                       {% if linklists[link.handle] == empty %}
                         <li><a href="{{ link.url }}">{{ link.title }}</a></li>
                       {% else %}
-                      <li><a href="{{ link.url }}">{{ link.title }} <span class="icon-right-arrow arrow"></span></a> 
+                      <li><a href="{{ link.url }}">{{ link.title }} <span class="icon-right-arrow arrow"></span></a>
                         <ul class="animated fadeIn">
-                          {% for link in linklists[link.handle].links %}                        
+                          {% for link in linklists[link.handle].links %}
                             <li><a href="{{ link.url }}">{{ link.title }}</a></li>
                           {% endfor %}
                         </ul>
@@ -158,6 +158,8 @@
           </ul>
         </div>
       </div>
+
+      <div class="bc-studio-top-menu-line sixteen columns"></div>
       
       {% if settings.featured_content_page != blank %}
         <div class="sixteen columns">
