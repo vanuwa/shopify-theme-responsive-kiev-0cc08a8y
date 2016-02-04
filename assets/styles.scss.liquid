@@ -3106,7 +3106,8 @@ body .bc-studio-modifier,
     padding-top: 30px;
   }
 
-  .modal_price span {
+  .modal_price span,
+  .price_total {
     font-size: 120%;
     font-weight: bold;
     color: {{ settings.btn_color }}
@@ -3123,6 +3124,43 @@ body .bc-studio-modifier,
 
   hr {
     display: none;
+  }
+
+  #cart_form {
+    .checkout_table_header {
+      h4 {
+        color: {{ settings.regular_color }};
+        font-weight: normal;
+      }
+    }
+
+    h4.subtotal {
+      color: {{ settings.regular_color }};
+      font-weight: normal;
+    }
+
+    .bc-studio-subtotal {
+      font-weight: bold;
+      color: {{ settings.btn_color }};
+    }
+
+    ul li div.two.columns,
+    ul li div.four.columns {
+      padding-top: 100px;
+    }
+
+    ul li div {
+      margin-bottom: 20px;
+    }
+
+    .bc-studio-render-separator div {
+      border-top: 1px solid {{ settings.border_color }};
+      padding-top: 40px;
+    }
+
+    .bc-studio-render-separator div.clearfix {
+      border: none;
+    }
   }
 
 }
