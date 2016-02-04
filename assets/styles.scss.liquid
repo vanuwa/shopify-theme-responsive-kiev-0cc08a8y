@@ -3104,15 +3104,25 @@ body .bc-studio-modifier,
 
   .bc-studio-price-block {
     padding-top: 30px;
-
-    .modal_price span {
-      font-size: 120%;
-      font-weight: bold;
-      color: {{ settings.btn_color }}
-    }
   }
 
-  .bc-studio-product-separator {
+  .modal_price span {
+    font-size: 120%;
+    font-weight: bold;
+    color: {{ settings.btn_color }}
+  }
+
+  .footer hr,
+  hr.bc-studio-product-separator {
+    display: block;
+  }
+
+  hr.bc-studio-product-separator {
     margin: 100px 0;
   }
+
+  hr {
+    display: none;
+  }
+
 }
