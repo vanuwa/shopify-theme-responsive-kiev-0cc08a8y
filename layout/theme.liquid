@@ -177,6 +177,12 @@
       
     </div> <!-- end container -->
 
+    {% if settings.footer_banner_enabled %}
+      <div class="container" style="padding-bottom: 0; margin-bottom: -24px;">
+        {% include 'footer-slider' %}
+      </div>
+    {% endif %}
+
     <div class="footer">
       <div class="container">
         <div class="sixteen columns">

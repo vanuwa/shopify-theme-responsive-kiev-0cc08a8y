@@ -2999,6 +2999,33 @@
         "id": "display_payment_methods",
         "label": "Show payment method icons",
         "default": true
+      },
+      {
+        "type": "header",
+        "content": "Footer banner"
+      },
+      {
+        "type": "checkbox",
+        "id": "footer_banner_enabled",
+        "label": "Enable banner"
+      },
+      {
+        "type": "image",
+        "id": "footer_banner.jpg",
+        "label": "Banner image",
+        "info": "1280 x 600px recommended",
+        "max-width": 2048,
+        "max-height": 1600
+      },
+      {
+        "type": "text",
+        "id": "footer_banner_alt_text",
+        "label": "ALT text"
+      },
+      {
+        "type": "text",
+        "id": "footer_banner_link",
+        "label": "Link URL"
       }
     ]
   },
@@ -3916,6 +3943,67 @@
       {
         "type": "text",
         "id": "banner_3_link",
+        "label": "Link URL"
+      },
+      {
+        "type": "header",
+        "content": "Banner 4"
+      },
+      {
+        "type": "checkbox",
+        "id": "banner_4_enabled",
+        "label": "Enable banner"
+      },
+      {
+        "type": "image",
+        "id": "banner_4.jpg",
+        "label": "Banner image",
+        "info": "1280 x 600px recommended",
+        "max-width": 2048,
+        "max-height": 1600
+      },
+      {
+        "type": "text",
+        "id": "banner_4_alt_text",
+        "label": "ALT text"
+      },
+      {
+        "type": "text",
+        "id": "banner_4_headline",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "banner_4_subtitle",
+        "label": "Subheading"
+      },
+      {
+        "type": "select",
+        "id": "banner_4_text_align",
+        "label": "Text alignment",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "center",
+            "label": "Center"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "banner_4_button_text",
+        "label": "Button text"
+      },
+      {
+        "type": "text",
+        "id": "banner_4_link",
         "label": "Link URL"
       }
     ]

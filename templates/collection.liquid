@@ -2,7 +2,7 @@
 
   <div class="sixteen columns">
     <div class="section clearfix">    
-      <h1><a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }}</a></h1>
+      <h1 class="bc-studio-hide-border"><a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }}</a></h1>
 
       <div class="breadcrumb eight columns alpha">
         {% if settings.collection_breadcrumb %}
@@ -97,7 +97,7 @@
   {% else %}
     {% assign products = collection.products %}
     {% assign products_per_row = settings.products_per_row %}
-    {% include 'product-loop' with settings.collection_sidebar %}
+    {% include 'product-list' with settings.collection_sidebar %}
   {% endif %}
   </div>
   {% include 'pagination' with settings.collection_sidebar %}

@@ -1,0 +1,25 @@
+{% if settings.slideshow_width_narrow %}
+    <div class="sixteen columns clearfix">
+{% else %}
+    </div>
+{% endif %}
+
+<div class="slider flexslider">
+    <ul class="slides">
+        <li>
+            {% if settings.footer_banner_link != blank %}
+                <a href="{{ settings.footer_banner_link }}">
+            {% endif %}
+            <img src="{{ 'footer_banner.jpg' | asset_url }}" alt="{{ settings.footer_banner_alt_text | escape }}" />
+            {% if settings.footer_banner_link != blank %}
+                </a>
+            {% endif %}
+        </li>
+    </ul>
+</div>
+
+{% if settings.slideshow_width_narrow %}
+    </div>
+{% else %}
+    <div>
+{% endif %}

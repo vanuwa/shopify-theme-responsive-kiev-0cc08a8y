@@ -456,3 +456,46 @@
     <div>
   {% endif %}
 {% endif %}
+
+{% if settings.banner_4_enabled %}
+  {% if settings.slideshow_width_narrow %}
+    <div class="sixteen columns clearfix">
+  {% else %}
+    </div>
+  {% endif %}
+
+  <div class="slider flexslider">
+    <ul class="slides">
+      <li>
+        {% if settings.banner_4_link != blank %}
+          <a href="{{ settings.banner_4_link }}">
+        {% endif %}
+          <img src="{{ 'banner_4.jpg' | asset_url }}" alt="{{ settings.banner_3_alt_text | escape }}" />
+        {% if settings.banner_4_link != blank %}
+          </a>
+        {% endif %}
+        {% if settings.banner_4_headline != blank or settings.banner_4_subtitle != blank or settings.banner_4_button_text != blank %}
+          <div class="flex-caption">
+            <div class="container">
+              <div class="columns {% if settings.banner_4_text_align == 'left' %} align_left ten offset-by-one {% elsif settings.banner_4_text_align == 'right' %} align_left seven offset-by-nine {% else %} sixteen {% endif %}">
+                <h3 class="headline">{{ settings.banner_4_headline }}</h3>
+                <p class="subtitle">{{ settings.banner_4_subtitle }}</p>
+                {% if settings.banner_4_button_text != blank %}
+                  <a href="{{ settings.banner_4_link }}" class="action_button">
+                    {{ settings.banner_4_button_text }}
+                  </a>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </li>
+    </ul>
+  </div>
+
+  {% if settings.slideshow_width_narrow %}
+    </div>
+  {% else %}
+    <div>
+  {% endif %}
+{% endif %}
